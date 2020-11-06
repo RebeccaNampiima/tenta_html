@@ -1,56 +1,149 @@
-/*.parent {
-	background-color: blue;
-	height: 400px;
-	width: 400px;
-	transform: translate(50px 100px);
+* {
+	margin: 0;
+	padding: 0; /* avoid spaces in the body*/
 }
 
-.child {
-	background-color: red;
-	height: 50%;
-	width: 50%;
-	transition: 1s ease-in;
+.body {
+	background-color: rgb(182, 68, 96);
 }
 
-.parent:hover {
-	transition: 2s;
-}
-
-.animate__animated.animate__bounceIn {
-	--animate-duration: 2s;
-}
-
-.btn-primary {
-	width: 200px;
-	height: 50px;
-	background-color: red;
-	font-size: 80px;
-}*/
-.footer {
-	min-height: 271px;
-	height: 100%;
+nav {
 	width: 100%;
-	background-color: #232323;
-	
+	height: 50px;
+	background-color: rgb(93, 105, 93);
 }
-.fab {
+
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+
+nav li {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+nav li a {
 	color: white;
-	max-width: 42px;
-	max-height: 42px;
+	font-size: 17px;
+	padding: 7px 13px;
+	text-transform: uppercase;
+	font-family: "Noto Serif", serif;
+	font-weight: 200;
 }
 
-.fab:hover {
-	color: black;
+nav li :hover {
+	background-color: white;
+	color: rgb(93, 105, 93);
+	text-decoration: none;
+	border-radius: 10px;
 }
 
-.footer-container {
-	
-	flex-direction: column;
+.welcome {
+	width: 250px;
+	height: 150px;
+	background-color: tomato;
+	font-family: "Arizonia", cursive;
+	font-size: 20px;
+	color: white;
+	margin: auto;
+	margin-top: 5px;
 }
 
-a {
-	margin: 0 10px;
+.second_div {
+	width: 250px;
+	height: 150px;
+	background-color: tomato;
+	font-family: "Arizonia", cursive;
+	font-size: 20px;
+	color: white;
+	margin: auto;
+	margin-top: 30px;
+	border: 4px solid yellow;
 }
 
-a:hover {
-	fill: goldenrod;
+.second_div input {
+	margin: 30px 30px;
+}
+
+.second_div button {
+	width: 60px;
+	position: relative;
+	left: 80px;
+}
+
+@media only screen and (min-width: 768px) and( max-width: 1024px) {
+	nav {
+		height: 60px;
+	}
+
+	nav ul {
+		margin-right: 50px;
+	}
+
+	nav li a {
+		font-size: 27px;
+		text-decoration: none;
+		font-weight: 300;
+	}
+
+	.welcome {
+		width: 280px;
+		height: 170px;
+
+		font-size: 30px;
+		color: white;
+		margin-top: 30px;
+	}
+
+	.second_div {
+		width: 280px;
+		height: 170px;
+		font-size: 30px;
+		color: white;
+		margin: auto;
+		margin-top: 30px;
+		border: 5px solid yellow;
+	}
+
+	.second_div input {
+		margin: 30px 30px;
+	}
+
+	.second_div button {
+		width: 70px;
+		position: relative;
+		left: 80px;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	.welcome {
+		width: 400px;
+		height: 250px;
+
+		font-size: 35px;
+		color: white;
+		margin-top: 30px;
+	}
+
+	.second_div {
+		width: 400px;
+		height: 250px;
+		font-size: 35px;
+		color: white;
+		margin: auto;
+		margin-top: 30px;
+		border: 5px solid yellow;
+	}
+
+	.second_div input {
+		margin: 30px 30px;
+	}
+
+	.second_div button {
+		width: 100px;
+		position: relative;
+		left: 80px;
+	}
+}
