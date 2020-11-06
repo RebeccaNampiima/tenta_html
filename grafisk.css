@@ -1,11 +1,6 @@
-* {
-	margin: 0;
-	padding: 0;
-}
 .body {
 	background-color: khaki;
 }
-
 .grafisk {
 	width: 200px;
 	height: 200px;
@@ -17,4 +12,16 @@
 	width: 400px;
 	height: 300px;
 	background-color: yellow;
+}
+
+.list ul li ol {
+	opacity: 0;
+}
+
+.list ul li:hover {
+	opacity: 1;
+}
+
+.list ul li ol:hover {
+	opacity: 1;
 }
